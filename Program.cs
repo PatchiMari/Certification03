@@ -26,3 +26,16 @@ class Program
       // Создание нового массива нужной длины
       string[] output = new string[] { };
 
+        // Заполнение нового массива строками, длина которых меньше или равна 3 символам
+        for (int i = 0; i < input.Length; i++)
+        {
+            if (input[i].Length <= 3)
+            {
+                Array.Resize(ref output, output.Length + 1);
+                output[output.Length - 1] = input[i];
+            }
+        }
+
+        return output;
+    }
+}
