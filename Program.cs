@@ -21,3 +21,8 @@ class Program
     }
 
     static string[] GetStrings(string[] input)
+  {
+
+      // Создание нового массива нужной длины
+      string[] output = new string[] { };
+
